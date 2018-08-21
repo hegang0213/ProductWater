@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.bdwater.productwater.asset.device.DeviceActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- title -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:indeterminate="true"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/titleIndent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+            <!-- body -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBody"
+                android:columnCount="5"
+                android:padding="@dimen/bodyIndent"
+                android:rowCount="3">
+
+                <!-- name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_column="1"
+                    android:layout_columnSpan="4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_row="0"
+                    android:paddingLeft="@dimen/propertyIndent" />
+                <!-- install date -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:paddingTop="@dimen/propertyIndent"
+                    android:text="@string/installDate" />
+
+                <TextView
+                    android:id="@+id/installDateTextView"
+                    android:layout_column="1"
+                    android:layout_columnSpan="4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:paddingLeft="@dimen/propertyIndent"
+                    android:paddingTop="@dimen/propertyIndent" />
+                <!-- location -->
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_column="0"
+                    android:layout_columnSpan="5"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="2"
+                    android:paddingTop="@dimen/propertyIndent" />
+            </GridLayout>
+
+            <!-- children -->
+            <LinearLayout
+                android:id="@+id/childrenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!-- children title -->
+                <LinearLayout
+                    android:id="@+id/childrenTitleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/asset_layout_clickable"
+                    android:clickable="true"
+                    android:padding="@dimen/titleIndent"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/childrenTitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="资产组成"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="@dimen/propertyIndent"
+                        android:clickable="false"/>
+                    <ImageView
+                        android:layout_width="@dimen/icon_size"
+                        android:layout_height="@dimen/icon_size"
+                        app:ico_color="@color/colorDark"
+                        app:ico_icon="cmd-arrow-down"
+                        app:ico_padding="0dp"
+                        app:ico_size="@dimen/icon_size"
+                        android:clickable="false"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorSeparatorLine" />
+                <!-- body -->
+                <LinearLayout
+                    android:id="@+id/childrenBodyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- body content -->
+                    <LinearLayout
+                        android:id="@+id/childrenBodyContentLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/propertyIndent">
+                            <ImageView
+                                android:layout_width="@dimen/icon_size"
+                                android:layout_height="@dimen/icon_size"
+                                app:ico_color="@color/colorDanger"
+                                app:ico_icon="cmd-alert-outline"
+                                app:ico_padding="0dp"
+                                app:ico_size="@dimen/icon_size"
+                                android:clickable="false"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/propertyIndent"
+                                android:text="@string/no_children"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorSeparatorLine" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- columns -->
+            <LinearLayout
+                android:id="@+id/columnLayout"
+                android:background="@color/colorBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+ </RelativeLayout>

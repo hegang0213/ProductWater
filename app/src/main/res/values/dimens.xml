@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarTextSize">12dp</dimen>
+    <dimen name="titleTextSize">12dp</dimen>
+    <dimen name="textSize">12dp</dimen>
+    <dimen name="textNormalSize">14dp</dimen>
+    <dimen name="textBigSize">18dp</dimen>
+    <dimen name="hintTextSize">10dp</dimen>
+    <dimen name="titleIndent">12dp</dimen>
+    <dimen name="propertyIndent">12dp</dimen>
+    <dimen name="bodyIndent">24dp</dimen>
+
+    <dimen name="cardElevation">0dp</dimen>
+
+    <dimen name="adornTextSize">10dp</dimen>
+    <dimen name="textSecondarySize">10dp</dimen>
+
+    <dimen name="card_icon_size">24dp</dimen>
+    <dimen name="content_icon_size">64dp</dimen>
+    <dimen name="icon_size">16dp</dimen>
+    <dimen name="icon_size_big">32dp</dimen>
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="notification_icon_size">16dp</dimen>
+
+    <dimen name="marginLeft">12dp</dimen>
+    <dimen name="marginTop">12dp</dimen>
+    <dimen name="marginLeft2x">24dp</dimen>
+    <dimen name="marginRight2x">24dp</dimen>
+    <dimen name="paddingLeft">24dp</dimen>
+    <dimen name="paddingRight">24dp</dimen>
+    <dimen name="paddingTop">12dp</dimen>
+    <dimen name="paddingBottom">12dp</dimen>
+    <dimen name="paddingLeft2x">48dp</dimen>
+    <dimen name="paddingRight2x">48dp</dimen>
+    <dimen name="content_paddingTop">24dp</dimen>
+    <dimen name="content_paddingBottom">24dp</dimen>
+
+    <dimen name="dialog_paddingLeft">24dp</dimen>
+    <dimen name="dialog_paddingRight">24dp</dimen>
+    <dimen name="dialog_paddingTop">12dp</dimen>
+    <dimen name="dialog_paddingBottom">12dp</dimen>
+    <dimen name="dialog_content_paddingTop">24dp</dimen>
+    <dimen name="dialog_content_paddingBottom">24dp</dimen>
+
+    <dimen name="button_height">35dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/asset_layout_clickable"
+    android:clickable="true"
+    android:padding="@dimen/propertyIndent"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:clickable="false"
+        app:ico_color="@color/colorDark"
+        app:ico_icon="cmd-link"
+        app:ico_padding="0dp"
+        app:ico_size="@dimen/icon_size" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/propertyIndent"
+        android:layout_weight="1" />
+</LinearLayout>

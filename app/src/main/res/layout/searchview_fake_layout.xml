@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/propertyIndent"
+    android:background="@drawable/search_view_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusableInTouchMode="false"
+    android:padding="@dimen/propertyIndent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/search_hint"
+        android:textColor="@color/colorDark" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="@dimen/propertyIndent"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:focusableInTouchMode="false"
+        app:ico_color="@color/colorDark"
+        app:ico_icon="cmd-magnify"
+        app:ico_padding="0dp"
+        app:ico_size="@dimen/card_icon_size" />
+</LinearLayout>
